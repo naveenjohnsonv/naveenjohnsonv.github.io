@@ -1,0 +1,183 @@
+body {
+  background-color: black;
+  color: #f0e9f2;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+main {
+  padding: 0 8%;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+p {
+  font-family: 'Hind Madurai', sans-serif;
+  color: #e5e5e6da;
+  font-size: 1.4rem;
+}
+
+a {
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.txt-box li {
+  font-family: 'Hind Madurai', sans-serif;
+  color: #e5e5e6da;
+  font-size: 1.4rem;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin-top: 30px;
+  margin-right: 60px;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+.nav-items {
+  float: left;
+  margin-left: 40px;
+}
+
+.nav-items a {
+  display: block;
+  color: #e5e5e6da;
+  text-align: center;
+  margin: 16px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.nav-items a:hover {
+  color: rebeccapurple;
+}
+
+.heading-box {
+  padding: 350px 8%;
+}
+
+.heading-box p {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+header {
+  height: 1000px;
+  width: 100%;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn {
+  text-decoration: none;
+  color: #f0e9f2;
+  border: 1px solid rebeccapurple;
+  padding: 10px 25px;
+}
+
+.subheading {
+  margin-top: 80px;
+}
+
+.subheading:after {
+  display: block;
+  content: "";
+  width: 90px;
+  padding-bottom: 15px;
+  border-bottom: solid 1px rebeccapurple;
+}
+
+#work {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.work-img {
+  max-width: 100%;
+}
+
+.gh {
+  text-decoration: none;
+  color: #e5e5e6da;
+  border-bottom: solid 1px rebeccapurple;
+  padding: 5px;
+}
+
+.gh span {
+  padding-left: 1rem;
+}
+
+.gh-img {
+  margin-left: 1rem;
+}
+
+.gh-img img {
+  width: 30px;
+}
+
+.txt-box {
+  width: 40%;
+}
+
+.img-box {
+  flex: 0 1 50%;
+  margin: 20px;
+}
+
+footer p {
+  margin-top: 150px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+@media only screen and (max-width: 715px) {
+  
+  .heading-box {
+    padding: 200px 8%;
+  }
+
+  header {
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+ 
+  .txt-box {
+    width: 100%;
+  }
+
+  .img-box {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .work-img {
+    padding: 0;
+    min-width: 400px;
+  }
+}
