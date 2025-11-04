@@ -1,34 +1,50 @@
 # Portfolio Website - Naveen Johnson V
 
-A modern, responsive portfolio website showcasing Data Science and Machine Learning projects.
+A modern, responsive, bilingual portfolio website showcasing Data Science and AI expertise with professional experience and educational background.
+
+## 📋 Recent Updates
+
+- ✅ **Bilingual Support**: Full English and French translations with persistent language preference
+- ✅ **Professional Links**: Added clickable links to EURECOM and ALTEN Labs
+- ✅ **Employment Status**: Updated to reflect "Former Research Intern" status
+- ✅ **Back-to-Top Button**: Added smooth scroll-to-top functionality
+- ✅ **Enhanced UX**: Improved animations and transitions
+- ✅ **Code Syntax Highlighting**: Integrated Highlight.js with Sunset theme
+- ✅ **Modular Architecture**: Separated translations into dedicated module
 
 ## 🌟 Features
 
+- **Bilingual Support (🇬🇧/🇫🇷)**: Full English and French translations with seamless language switching
 - **Modern Design**: Clean, professional single-page application with modal-based navigation
 - **Fully Responsive**: Optimized for all device sizes (mobile, tablet, desktop)
 - **Fast Loading**: Minimal dependencies, optimized assets
 - **SEO Optimized**: Proper meta tags and semantic HTML
 - **Accessibility**: ARIA labels, keyboard navigation support
 - **Smooth Animations**: CSS transitions and transforms for better UX
+- **Back-to-Top Button**: Smooth scroll navigation for enhanced UX
+- **Dynamic Content**: Real-time language switching without page reload
 
 ## 📁 Project Structure
 
 ```
 naveenjohnsonv.github.io/
-├── index.html              # Main HTML file
+├── index.html              # Main HTML file with bilingual content
 ├── CNAME                   # GitHub Pages custom domain
 ├── README.md              # This file
 ├── resources/
 │   ├── css/
-│   │   └── style.css      # Main stylesheet with CSS variables
+│   │   ├── style.css      # Main stylesheet with CSS variables
+│   │   └── sunset.min.css # Code syntax highlighting theme
 │   ├── scripts/
-│   │   └── index.js       # Navigation and interaction logic
+│   │   ├── index.js       # Navigation and interaction logic
+│   │   └── translations.js # Bilingual translations (EN/FR)
 │   └── images/
-│       ├── header.jpg     # Background image
+│       ├── header.jpg     # Hero background image
+│       ├── me.jpg         # Profile picture
 │       ├── favicon-32x32.png
-│       ├── arrow-up.svg
-│       ├── github.svg
-│       ├── 1.webp         # Project images
+│       ├── arrow-up.svg   # Back-to-top button icon
+│       ├── github.svg     # GitHub icon
+│       ├── 1.webp         # Project/Background images
 │       ├── 2.webp
 │       ├── 3.webp
 │       └── 4.webp
@@ -56,10 +72,46 @@ naveenjohnsonv.github.io/
 
 ## 🚀 Sections
 
-1. **About**: Professional background and experience
-2. **Projects**: Showcases 4 major ML/DS projects with links
-3. **Skills**: Technical skills organized by category
-4. **Contact**: Contact form and social media links
+1. **Header**: Professional tagline with links to EURECOM and ALTEN Labs
+2. **About**: Professional background, expertise areas, and current focus
+3. **Background**: Educational and professional experience with detailed descriptions
+4. **Skills**: Technical skills organized by category (Languages, Frameworks, Tools, Domains)
+5. **Contact**: Social media links and professional profiles
+
+## 🌍 Internationalization
+
+The website supports **English** and **French** with:
+- **Language Switcher**: Toggle button in the header (🇬🇧/🇫🇷)
+- **Translation System**: Centralized translations in `resources/scripts/translations.js`
+- **localStorage Persistence**: User language preference is saved
+- **Real-time Switching**: No page reload required
+- **Complete Coverage**: All UI text, descriptions, and content translated
+
+### Translation Structure
+
+```javascript
+const translations = {
+    en: {
+        'header.tagline': 'English text...',
+        'nav.about': 'About',
+        // ... more translations
+    },
+    fr: {
+        'header.tagline': 'Texte français...',
+        'nav.about': 'À Propos',
+        // ... more translations
+    }
+};
+```
+
+### Adding New Translations
+
+1. Add translation keys to both `en` and `fr` objects in `translations.js`
+2. Use `data-i18n` attribute in HTML:
+```html
+<p data-i18n="your.translation.key">Default text</p>
+```
+3. The language switcher will automatically update the content
 
 ## 📱 Responsive Breakpoints
 
@@ -71,11 +123,16 @@ naveenjohnsonv.github.io/
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern features (Grid, Flexbox, Custom Properties)
-- **JavaScript (ES6+)**: Vanilla JS, no frameworks
+- **HTML5**: Semantic markup with i18n support
+- **CSS3**: Modern features (Grid, Flexbox, Custom Properties, Animations)
+- **JavaScript (ES6+)**: Vanilla JS with modular architecture
+  - Internationalization system
+  - Dynamic content loading
+  - Local storage for user preferences
+- **Highlight.js**: Syntax highlighting for code blocks (Sunset theme)
 - **Font Awesome**: Icon library
 - **Git**: Version control
+- **GitHub Pages**: Hosting and deployment
 
 ## 💻 Development
 
@@ -105,27 +162,26 @@ php -S localhost:8000
 
 #### Updating Content
 
-**Personal Information**: Edit `index.html` in the header section:
-```html
-<h1>Your Name</h1>
-<p>Your tagline</p>
+**Personal Information**: 
+1. Edit `index.html` header section for default (English) content
+2. Update `resources/scripts/translations.js` for both languages:
+```javascript
+'header.tagline': 'Your tagline in English',
+// In fr section:
+'header.tagline': 'Votre slogan en français'
 ```
 
-**Projects**: Modify the project cards in the `#projects` article:
-```html
-<div class="project-card">
-    <div class="project-image">
-        <img src="path/to/image.webp" alt="Project Name">
-    </div>
-    <div class="project-content">
-        <h3>Project Title</h3>
-        <p>Description...</p>
-        <!-- Tags and links -->
-    </div>
-</div>
-```
+**Background/Experience**: 
+1. Modify the timeline items in the `#background` article in `index.html`
+2. Update corresponding translations in `translations.js` for bilingual support
 
-**Skills**: Update the skills grid in the `#skills` article.
+**Skills**: Update the skills grid in the `#skills` article and translate category names in `translations.js`
+
+**Adding New Sections**: 
+1. Add HTML structure in `index.html`
+2. Add navigation link with `data-i18n` attribute
+3. Add translations for all text content in both languages
+4. Update navigation logic in `index.js` if needed
 
 #### Styling
 
@@ -155,11 +211,19 @@ All styling is in `resources/css/style.css`. Key customization points:
 
 #### JavaScript
 
-The navigation logic is in `resources/scripts/index.js`. It handles:
-- Article show/hide transitions
-- URL hash navigation
-- Keyboard shortcuts (ESC to close)
-- Form validation
+**Navigation (`resources/scripts/index.js`)**:
+- Article show/hide transitions with smooth animations
+- URL hash navigation for direct linking
+- Keyboard shortcuts (ESC to close modals)
+- Back-to-top button with scroll detection
+- Smooth scroll behavior
+
+**Internationalization (`resources/scripts/translations.js`)**:
+- Language switching (English ⇄ French)
+- localStorage persistence for user preference
+- Dynamic content updates without page reload
+- Centralized translation management
+- Automatic text replacement using `data-i18n` attributes
 
 ## 📦 Deployment
 
@@ -179,12 +243,16 @@ The navigation logic is in `resources/scripts/index.js`. It handles:
 
 ## ⚡ Performance Optimization
 
-- **Images**: Use WebP format, optimized file sizes
-- **CSS**: Single minified stylesheet
-- **JavaScript**: Vanilla JS, minimal dependencies
-- **Fonts**: System fonts as fallbacks
-- **Lazy Loading**: Images load as needed
-- **Caching**: Set appropriate cache headers
+- **Images**: WebP format with optimized file sizes
+- **CSS**: Modular stylesheets with efficient selectors
+- **JavaScript**: Vanilla JS with no framework overhead
+  - Modular architecture (index.js + translations.js)
+  - Event delegation for better performance
+  - localStorage for client-side state management
+- **Fonts**: System fonts as fallbacks (Source Sans Pro)
+- **Lazy Loading**: Deferred script loading
+- **Caching**: Browser caching for static assets
+- **Code Highlighting**: CDN-loaded Highlight.js with Sunset theme
 
 ## 🔧 Browser Support
 
@@ -209,10 +277,33 @@ Contributions, issues, and feature requests are welcome!
 - **GitHub**: [github.com/naveenjohnsonv](https://github.com/naveenjohnsonv)
 - **Portfolio**: [cv.naveen.rocks](http://cv.naveen.rocks)
 
+## 🎯 Key Features Highlight
+
+### Professional Content
+- **Current Status**: MSc in Data Science @ [EURECOM](https://www.eurecom.fr)
+- **Former Position**: Research Intern @ [ALTEN Labs](https://www.alten.com)
+- **Expertise**: AI Planning, NLP, Knowledge Engineering
+- **Complete Background**: Detailed timeline of education and experience
+
+### Technical Features
+- **Zero Framework Dependencies**: Pure vanilla JavaScript
+- **Bilingual from Ground Up**: Not an afterthought, built-in from the start
+- **User Preference Memory**: Language choice persists across sessions
+- **Modern ES6+ Code**: Clean, maintainable, well-documented
+- **Semantic HTML**: Proper structure for SEO and accessibility
+
+### User Experience
+- **Instant Language Switch**: No page reload, smooth transitions
+- **Keyboard Navigation**: Full keyboard support (ESC to close, etc.)
+- **Smooth Scrolling**: Enhanced navigation with back-to-top button
+- **Mobile-First**: Responsive design that works on all devices
+- **Fast Load Times**: Optimized assets and minimal dependencies
+
 ## 🙏 Acknowledgments
 
 - Inspired by modern portfolio designs
 - Icons by [Font Awesome](https://fontawesome.com)
+- Code highlighting by [Highlight.js](https://highlightjs.org)
 - Hosted on [GitHub Pages](https://pages.github.com)
 
 ---
