@@ -4,7 +4,7 @@
 const translations = {
     en: {
         // Header
-        'header.tagline': 'Data Scientist | MSc in Data Science @ EURECOM<br />AI Planning • NLP • Knowledge Engineering<br />Research Intern @ <a href="https://www.alten.com" target="_blank">ALTEN Labs</a>',
+        'header.tagline': 'Data Scientist | MSc in Data Science @ <a href="https://www.eurecom.fr" target="_blank">EURECOM</a><br />AI Planning • NLP • Knowledge Engineering<br />Former Research Intern @ <a href="https://www.alten.com" target="_blank">ALTEN Labs</a>',
         
         // Navigation
         'nav.about': 'About',
@@ -132,7 +132,7 @@ const translations = {
     
     fr: {
         // Header
-        'header.tagline': 'Data Scientist | MSc en Data Science @ EURECOM<br />Planification IA • NLP • Ingénierie des Connaissances<br />Stagiaire Recherche @ <a href="https://www.alten.com" target="_blank">ALTEN Labs</a>',
+        'header.tagline': 'Data Scientist | MSc en Data Science @ <a href="https://www.eurecom.fr" target="_blank">EURECOM</a><br />Planification IA • NLP • Ingénierie des Connaissances<br />Ancien Stagiaire Recherche @ <a href="https://www.alten.com" target="_blank">ALTEN Labs</a>',
         
         // Navigation
         'nav.about': 'À Propos',
