@@ -96,6 +96,17 @@ const translations = {
         'certifications.scores.title': 'Test Scores',
         'certifications.professional.title': 'Professional Certifications',
         
+        // Test Scores
+        'cert.tfi.title': 'TFI (Test de français international)',
+        'cert.tfi.issuer': 'French Language Test',
+        'cert.tfi.date': 'January 2025',
+        'cert.tfi.score': '<strong>Score: 385</strong> - Demonstrates B2 level proficiency',
+        
+        'cert.toefl.title': 'TOEFL',
+        'cert.toefl.issuer': 'English Language Proficiency Test',
+        'cert.toefl.date': 'November 2022',
+        'cert.toefl.score': '<strong>Score: 110</strong> - Demonstrates C2 level proficiency',
+        
         // Contact
         'contact.title': 'Get In Touch',
         'contact.intro': 'Are you looking for a data-driven professional to help solve complex problems or drive insights from your data? Or just want to say "Hi 👋"? Feel free to reach out!',
@@ -203,10 +214,21 @@ const translations = {
         'certifications.scores.title': 'Scores de Tests',
         'certifications.professional.title': 'Certifications Professionnelles',
         
+        // Test Scores
+        'cert.tfi.title': 'TFI (Test de français international)',
+        'cert.tfi.issuer': 'Test de langue française',
+        'cert.tfi.date': 'Janvier 2025',
+        'cert.tfi.score': '<strong>Score : 385</strong> - Démontre un niveau de compétence B2',
+        
+        'cert.toefl.title': 'TOEFL',
+        'cert.toefl.issuer': 'Test de compétence en langue anglaise',
+        'cert.toefl.date': 'Novembre 2022',
+        'cert.toefl.score': '<strong>Score : 110</strong> - Démontre un niveau de compétence C2',
+        
         // Contact
         'contact.title': 'Contactez-Moi',
         'contact.intro': 'Vous cherchez un professionnel orienté données pour résoudre des problèmes complexes ou obtenir des insights de vos données ? Ou juste envie de dire "Salut 👋" ? N\'hésitez pas à me contacter !',
-        'contact.name': 'Nom et Prenom',
+        'contact.name': 'Prénom et Nom',
         'contact.email': 'Email',
         'contact.message': 'Message',
         'contact.send': 'Envoyer',
