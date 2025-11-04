@@ -275,7 +275,7 @@ Contributions, issues, and feature requests are welcome!
 - **Email**: naveenjohnsonv@gmail.com
 - **LinkedIn**: [linkedin.com/in/naveenjohnsonv](https://linkedin.com/in/naveenjohnsonv)
 - **GitHub**: [github.com/naveenjohnsonv](https://github.com/naveenjohnsonv)
-- **Portfolio**: [cv.naveen.rocks](http://cv.naveen.rocks)
+- **Portfolio**: [naveenjohnsonv.fr](http://naveenjohnsonv.fr)
 
 ## 🎯 Key Features Highlight
 
