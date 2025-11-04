@@ -100,7 +100,7 @@ const translations = {
         'cert.tfi.title': 'TFI (Test de français international)',
         'cert.tfi.issuer': 'French Language Test',
         'cert.tfi.date': 'January 2025',
-        'cert.tfi.score': '<strong>Score: 385</strong> - Demonstrates B2 level proficiency',
+        'cert.tfi.score': '<strong>Score: 385</strong> - Demonstrates B1 level proficiency',
         
         'cert.toefl.title': 'TOEFL',
         'cert.toefl.issuer': 'English Language Proficiency Test',
@@ -218,7 +218,7 @@ const translations = {
         'cert.tfi.title': 'TFI (Test de français international)',
         'cert.tfi.issuer': 'Test de langue française',
         'cert.tfi.date': 'Janvier 2025',
-        'cert.tfi.score': '<strong>Score : 385</strong> - Démontre un niveau de compétence B2',
+        'cert.tfi.score': '<strong>Score : 385</strong> - Démontre un niveau de compétence B1',
         
         'cert.toefl.title': 'TOEFL',
         'cert.toefl.issuer': 'Test de compétence en langue anglaise',
