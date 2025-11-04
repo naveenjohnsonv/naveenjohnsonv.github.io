@@ -13,8 +13,7 @@ const translations = {
         
         // About Section
         'about.title': 'About Me',
-        'about.intro1': 'Data Scientist with MSc in Data Science (EURECOM) and 2+ years enterprise analytics experience. Proficient in Python, PyTorch, TensorFlow, NLP, deep learning, and knowledge engineering. Recent research intern at ALTEN Labs focusing on AI Planning and NLP applications.',
-        'about.intro2': 'I specialize in building LLM pipelines, automated knowledge graph construction, and deep learning models for computer vision and NLP tasks. Seeking Junior Data Scientist roles with openness to Data Engineer/Analyst positions.',
+        'about.intro1': 'Data Scientist with MSc in Data Science (EURECOM) and 2+ years enterprise analytics experience. Proficient in Python, PyTorch, TensorFlow, NLP, deep learning, Generative AI, and knowledge engineering. Seeking Junior Data Scientist roles; open to Junior Data Engineer/Analyst positions.',
         'about.skills.title': 'Technical Skills',
         'about.competencies.title': 'Key Competencies',
         
@@ -31,16 +30,16 @@ const translations = {
         'experience.alten.title': 'Data Science Research Intern - AI Planning / NLP',
         'experience.alten.company': 'ALTEN Labs',
         'experience.alten.date': 'March 2025 - August 2025 | Valbonne, Alpes-Maritimes, France',
-        'experience.alten.desc1': 'Built a template-driven LLM pipeline to generate formal task specifications, then executed with an open-source planner',
+        'experience.alten.desc1': 'Built a template-driven LLM model pipeline, using OpenAI\'s GPT-4o, that generates formal PDDL task specifications, which are then executed with Fast Downward open-source planner to create playable interactive narratives',
         'experience.alten.desc2': 'Added schema/consistency checks with automated fixes, cutting execution failures and improving reliability by ~60%',
         'experience.alten.desc3': 'Implemented state hashing and content-addressed caching; built utilities for plan replay and auditability',
         
         'experience.blueprint1.title': 'Associate Consultant - SAP Analytics',
         'experience.blueprint1.company': 'Blueprint Technologies Pvt Ltd',
         'experience.blueprint1.date': 'December 2021 - August 2023 | Bengaluru, Karnataka, India',
-        'experience.blueprint1.desc1': 'Delivered 20+ SAC dashboards with drill-downs and variance views for pharma and agrochem stakeholders',
+        'experience.blueprint1.desc1': 'Delivered 20+ SAC dashboards with drill-downs and detailed statistical analyses for pharma and agrochem stakeholders',
         'experience.blueprint1.desc2': 'Built ETL migrations between SAP ECC and BW/4HANA (ADSOs, CompositeProviders, transformations)',
-        'experience.blueprint1.desc3': 'Designed KPI logic and led data reconciliation, and UAT for production reports. Delivery across 5+ enterprise projects',
+        'experience.blueprint1.desc3': 'Designed KPI logic and led data reconciliation, and UAT for production reports; delivery across 5+ enterprise projects',
         
         'experience.blueprint2.title': 'Intern - SAP Analytics',
         'experience.blueprint2.company': 'Blueprint Technologies Pvt Ltd',
@@ -56,7 +55,7 @@ const translations = {
         
         'projects.ke.title': 'Knowledge Engineering in the LLM Era',
         'projects.ke.meta': 'Knowledge Graphs | NLP | RDF | Ontologies',
-        'projects.ke.desc': 'Reproduced and extended Text2KGBench experiments comparing SOTA LLM models for RDF triple extraction. Built ontology-aware LLM pipeline achieving superior performance with GPT-4o (AUC 0.89) over Qwen2.5 32B, integrated Odeuropa dataset with CIDOC-CRM-aligned ontologies.',
+        'projects.ke.desc': 'Reproduced and extended Text2KGBench (Text-to-Knowledge-Graph Benchmark) experiments comparing state-of-the-art LLM models for RDF triple extraction, evaluating precision, recall, and F1-score. Built ontology-aware LLM pipeline achieving superior performance with GPT-4o (AUC 0.89) over Qwen2.5 32B. Integrated DBpedia-WebNLG, Wikidata-TekGen, Odeuropa datasets with CIDOC-CRM-aligned ontologies to evaluate semantic accuracy and hallucination reduction.',
         
         'projects.sentiment.title': 'Sentiment Analysis using BERT',
         'projects.sentiment.meta': 'NLP | BERT | Transformers',
@@ -80,6 +79,17 @@ const translations = {
         'education.eurecom.school': 'EURECOM, Biot, France',
         'education.eurecom.date': '2023 - 2025',
         'education.eurecom.courses': 'Core Subjects:',
+        'education.eurecom.course1': 'Machine Learning',
+        'education.eurecom.course2': 'Reinforcement Learning',
+        'education.eurecom.course3': 'Advanced Statistical Inference',
+        'education.eurecom.course4': 'Deep Learning',
+        'education.eurecom.course5': 'Distributed Systems and Cloud Computing',
+        'education.eurecom.course6': 'Database Management System Implementation (DBSys)',
+        'education.eurecom.course7': 'Digital Image Processing & Video Compression',
+        'education.eurecom.course8': 'Semantic Web and Web Interaction Design',
+        'education.eurecom.course9': 'System and Network Security',
+        'education.eurecom.course10': 'Secure Communications',
+        'education.eurecom.course11': 'Project Management and Research Methodology',
         
         'education.iitm.degree': 'Diploma in Data Science',
         'education.iitm.school': 'Indian Institute of Technology, Madras, Chennai, India',
@@ -131,8 +141,7 @@ const translations = {
         
         // About Section
         'about.title': 'À Propos de Moi',
-        'about.intro1': 'Data Scientist titulaire d\'un Master en Data Science (EURECOM) avec 2+ ans d\'expérience en tant qu\'un Business Analyst. Maîtrise de Python, PyTorch, TensorFlow, NLP, deep learning et ingénierie des connaissances. Stagiaire recherche récent chez ALTEN Labs axé sur la planification IA et les applications NLP.',
-        'about.intro2': 'Je me spécialise dans la construction de pipelines LLM, la construction automatisée de graphes de connaissances et les modèles de deep learning pour la vision par ordinateur et les tâches NLP. Recherche poste Junior Data Scientist ; ouvert aux postes Data Engineer/Analyst.',
+        'about.intro1': 'Data Scientist titulaire d\'un Master en Data Science (EURECOM) avec 2+ ans d\'expérience en tant qu\'un Business Analyst. Maîtrise de Python, PyTorch, TensorFlow, NLP, deep learning, GenAI et science des données. Recherche poste Junior Data Scientist ; ouvert aux postes Data Engineer/Analyst.',
         'about.skills.title': 'Compétences Techniques',
         'about.competencies.title': 'Compétences Clés',
         
@@ -149,16 +158,16 @@ const translations = {
         'experience.alten.title': 'Stagiaire Recherche Data Science - Planification IA / NLP',
         'experience.alten.company': 'ALTEN Labs',
         'experience.alten.date': 'Mars 2025 - Août 2025 | Valbonne, Alpes-Maritimes, France',
-        'experience.alten.desc1': 'Développé un pipeline LLM pour générer des spécifications de tâches formelles avec planificateur open-source',
-        'experience.alten.desc2': 'Réduit les échecs d\'exécution de ~60% via contrôles de schéma/cohérence avec corrections automatisées',
-        'experience.alten.desc3': 'Implémenté hachage d\'état et mise en cache pour traçabilité et rejouabilité des plans',
+        'experience.alten.desc1': 'Développement d\'un pipeline LLM utilisant OpenAI GPT-4o pour génération de spécifications de tâches formelles PDDL, exécutées avec le planificateur open-source Fast Downward pour créer des récits interactifs jouables',
+        'experience.alten.desc2': 'Réduction de 60% des échecs d\'exécution via contrôles de schéma/cohérence avec corrections automatisées',
+        'experience.alten.desc3': 'Implémentation de hachage d\'état et mise en cache pour traçabilité et rejouabilité des plans',
         
         'experience.blueprint1.title': 'Consultant Associate - SAP Analytics',
         'experience.blueprint1.company': 'Blueprint Technologies Pvt Ltd',
         'experience.blueprint1.date': 'Décembre 2021 - Août 2023 | Bengaluru, Karnataka, Inde',
-        'experience.blueprint1.desc1': 'Livré 20+ tableaux de bord SAC avec analyses et vues d\'écarts pour les parties prenantes pharma et agrochimie',
-        'experience.blueprint1.desc2': 'Construit des migrations ETL entre SAP ECC et BW/4HANA (ADSOs, CompositeProviders, transformations)',
-        'experience.blueprint1.desc3': 'Conçu logique KPI et dirigé réconciliation de données et UAT sur 5+ projets d\'entreprise',
+        'experience.blueprint1.desc1': 'Livraison de 20+ tableaux de bord SAC avec analyses détaillées statistiques pour les parties prenantes pharma et agrochimie',
+        'experience.blueprint1.desc2': 'Construction de migrations ETL entre SAP ECC et BW/4HANA (ADSOs, CompositeProviders, transformations)',
+        'experience.blueprint1.desc3': 'Conception de logique KPI et pilotage de réconciliation de données et UAT sur 5+ projets d\'entreprise',
         
         'experience.blueprint2.title': 'Stagiaire - SAP Analytics',
         'experience.blueprint2.company': 'Blueprint Technologies Pvt Ltd',
@@ -174,23 +183,23 @@ const translations = {
         
         'projects.ke.title': 'Ingénierie des Connaissances à l\'Ère des LLM',
         'projects.ke.meta': 'Graphes de Connaissances | NLP | RDF | Ontologies',
-        'projects.ke.desc': 'Reproduit et étendu les expériences Text2KGBench comparant modèles LLM SOTA pour extraction de triplets RDF. Développé pipeline LLM conscient des ontologies atteignant performance supérieure avec GPT-4o (AUC 0.89) par rapport à Qwen2.5 32B, intégré dataset Odeuropa avec ontologies alignées CIDOC-CRM.',
+        'projects.ke.desc': 'Reproduction et extension des expériences Text2KGBench (Text-to-Knowledge-Graph Benchmark) comparant les performances des modèles LLM de pointe pour l\'extraction de triplets RDF, avec évaluation de la précision, du rappel et du F1-score. Développement d\'un pipeline LLM conscient des ontologies atteignant performance supérieure avec GPT-4o (AUC 0.89) par rapport à Qwen2.5 32B. Intégration des datasets DBpedia-WebNLG, Wikidata-TekGen, Odeuropa avec ontologies alignées CIDOC-CRM pour évaluation de la précision sémantique et réduction des hallucinations.',
         
         'projects.sentiment.title': 'Analyse de Sentiments avec BERT',
         'projects.sentiment.meta': 'NLP | BERT | Transformers',
-        'projects.sentiment.desc': 'Implémenté modèle basé sur BERT pour classification de sentiments de tweets atteignant 78% F1-score. Comparé performance avec approches NLP traditionnelles (TextBlob, VADER), démontrant résultats supérieurs avec modèles transformers via pipeline de prétraitement complet.',
+        'projects.sentiment.desc': 'Implémentation d\'un modèle basé sur BERT pour classification de sentiments de tweets atteignant 78% de F1-score. Comparaison de performance avec approches NLP traditionnelles (TextBlob, VADER), démontrant résultats supérieurs avec modèles transformers via pipeline de prétraitement complet.',
         
         'projects.audio.title': 'Détection d\'Anomalies Audio dans les Machines Industrielles',
         'projects.audio.meta': 'Deep Learning | Autoencodeurs | PyTorch',
-        'projects.audio.desc': 'Implémenté autoencodeurs convolutionnels et variationnels pour détecter anomalies dans sons de machines industrielles. Atteint score AUC de 88,8% avec VAE surpassant AE classique (76,6%), permettant applications de maintenance prédictive pour machines à rails coulissants.',
+        'projects.audio.desc': 'Implémentation d\'autoencodeurs convolutionnels et variationnels pour détecter anomalies dans sons de machines industrielles. Obtention d\'un score AUC de 88,8% avec VAE surpassant AE classique (76,6%), permettant applications de maintenance prédictive pour machines à rails coulissants.',
         
         'projects.cactus.title': 'Identification de Cactus par Imagerie Aérienne',
         'projects.cactus.meta': 'Deep Learning | Vision par Ordinateur | CNN',
-        'projects.cactus.desc': 'Développé architecture CNN personnalisée pour identification de cactus columnaires à partir d\'imagerie aérienne utilisant blocs convolutionnels empilés avec normalisation par batch et dropout. Atteint précision de 99% et score ROC/AUC de 1,0 sur dataset du projet VIGIA.',
+        'projects.cactus.desc': 'Développement d\'une architecture CNN personnalisée pour identification de cactus columnaires à partir d\'imagerie aérienne utilisant blocs convolutionnels empilés avec normalisation par batch et dropout. Obtention d\'une précision de 99% et score ROC/AUC de 1,0 sur dataset du projet VIGIA.',
         
         'projects.solar.title': 'Prévision de Production d\'Énergie Solaire',
         'projects.solar.meta': 'Machine Learning | Séries Temporelles | Régression',
-        'projects.solar.desc': 'Analyse comparative de modèles de régression LASSO et k-plus-proches-voisins pour prédiction jour suivant de puissance DC d\'installation solaire. LassoCV a atteint RMSE de 0,538 utilisant puissance DC retardée et caractéristiques de température ambiante sur données horaires.',
+        'projects.solar.desc': 'Analyse comparative de modèles de régression LASSO et k plus proches voisins pour prédiction jour suivant de puissance DC d\'installation solaire. LassoCV a atteint RMSE de 0,538 utilisant puissance DC retardée et caractéristiques de température ambiante sur données horaires.',
         
         // Education
         'education.title': 'Formation',
@@ -198,6 +207,17 @@ const translations = {
         'education.eurecom.school': 'EURECOM, Biot, France',
         'education.eurecom.date': '2023 - 2025',
         'education.eurecom.courses': 'Sujets Principales :',
+        'education.eurecom.course1': 'Machine Learning',
+        'education.eurecom.course2': 'Reinforcement Learning',
+        'education.eurecom.course3': 'Inférence Statistique Avancée',
+        'education.eurecom.course4': 'Deep Learning',
+        'education.eurecom.course5': 'Systèmes Distribués et Cloud Computing',
+        'education.eurecom.course6': 'Implémentation de Systèmes de Gestion de Base de Données (SGBD)',
+        'education.eurecom.course7': 'Traitement d\'Images Numériques & Compression Vidéo',
+        'education.eurecom.course8': 'Web Sémantique et Conception d\'Interaction Web',
+        'education.eurecom.course9': 'Sécurité des Systèmes et des Réseaux',
+        'education.eurecom.course10': 'Communications Sécurisées',
+        'education.eurecom.course11': 'Gestion de Projet et Méthodologie de Recherche',
         
         'education.iitm.degree': 'Diplôme en Data Science',
         'education.iitm.school': 'Indian Institute of Technology, Madras, Chennai, Tamil Nadu, Inde',
