@@ -1,137 +1,466 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="./resources/css/style.css">
-  <link rel="stylesheet" type="text/css" href="./resources/css/sunset.min.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Hind+Madurai:wght@300;400;500&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Rosario:ital@0;1&family=Source+Sans+Pro:ital@0;1&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .pwa-borders-borderBottom-easeInFromLeft-easeOutToRight::after {
-      background: rebeccapurple;
-    }
-    .pwa-background-easeOutFromCenterRound {
-      background: rebeccapurple;
-    }
-    .pwa-background-easeOutFromCenterRound::after {
-      background: black;
-    }
-    .pwa-background-easeInFromLeft-easeOutToLeft {
-      background: none;
-    }
-    .pwa-background-easeInFromLeft-easeOutToLeft::after {
-      background: rebeccapurple;
-    }
-  </style>
-  <title>Naveen Johnson | Portfolio </title>
-</head>
-<body>
-  <header>
-    <nav class>
-      <ul class="nav-menu">
-        <li class="nav-items"><a class="pwa-element pwa-borders-borderBottom-easeInFromLeft-easeOutToRight" href="#work">Work</a></li>
-        <li class="nav-items"><a class="pwa-element pwa-borders-borderBottom-easeInFromLeft-easeOutToRight" href="#about">About</a></li>
-        <li class="nav-items"><a class="pwa-element pwa-borders-borderBottom-easeInFromLeft-easeOutToRight" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="heading-box">
-      <h1>Naveen Johnson</h1>
-      <p>Data-driven IT Engineer specializing in Data Science and Machine Learning</p>
-      <a href="#contact" class="pwa-element pwa-background-easeOutFromCenterRound btn">Get in touch</a>
-    </div>
-  </header>
-  <main>
-    <h2 class="subheading">My Work</h2>
-    <div class="works">
-      <div id="work" class="one">
-        <div class="txt-box">
-          <h3>Comparative Analysis of Machine Learning Models for Solar Power Prediction</h3>
-          <p>Comparison of Lasso regression and k-Nearest Neighbors models to predict DC power generation from a solar plant, achieving best performance with kNN CV model using hourly data.</p>
-          <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Time Series Analysis</li>
-          </ul>
-          <a class="gh pwa-element pwa-background-easeInFromLeft-easeOutToLeft" href="https://github.com/naveenjohnsonv/ResearchProject">View Project <span> &rarr;</span></a>
-        </div>
-        <div class="img-box">
-          <a href="https://github.com/naveenjohnsonv/ResearchProject/blob/main/report/Report.pdf">
-            <img class="work-img" src="./resources/images/1.webp" alt="Solar Power Prediction Project">
-          </a>
-        </div>
-      </div>
-      <div id="work" class="two">
-        <div class="txt-box">
-          <h3>Aerial Cactus Identification</h3>
-          <p>A custom CNN architecture for columnar cactus identification from aerial imagery, achieving 99% accuracy and an ROC/AUC score of 1.0.</p>
-          <ul>
-            <li>Python</li>
-            <li>Deep Learning</li>
-            <li>Computer Vision</li>
-          </ul>
-          <a class="gh pwa-element pwa-background-easeInFromLeft-easeOutToLeft" href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%201">View Project <span> &rarr;</span></a>
-        </div>
-        <div class="img-box">
-          <a href="https://github.com/naveenjohnsonv/AML/blob/main/Challenge%201/Group50_Challenge1.pdf">
-            <img class="work-img" src="./resources/images/2.webp" alt="Aerial Cactus Identification Project">
-          </a>
-        </div>
-      </div>
-      <div id="work" class="three">
-        <div class="txt-box">
-          <h3>Anomaly Detection in Audio Signals</h3>
-          <p> Convolutional Autoencoders and Variational Autoencoders for audio anomaly detection, achieving 88.8% AUC score for detecting anomalies in industrial machine sounds.</p>
-          <ul>
-            <li>Python</li>
-            <li>PyTorch</li>
-            <li>Machine Learning</li>
-          </ul>
-          <a class="gh pwa-element pwa-background-easeInFromLeft-easeOutToLeft" href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%202">View Project <span>&rarr;</span></a>
-        </div>
-        <div class="img-box">
-          <a href="https://github.com/naveenjohnsonv/AML/blob/main/Challenge%202/Group50_Challenge2.pdf">
-            <img class="work-img" src="./resources/images/3.webp" alt="Audio Anomaly Detection Project">
-          </a>
-        </div>
-      </div>
-      <div id="work" class="four">
-        <div class="txt-box">
-          <h3>Tweet Sentiment Analysis</h3>
-          <p>A BERT-based model for tweet sentiment classification, achieving 78% F1-score and comparing performance with traditional NLP approaches.</p>
-          <ul>
-            <li>Python</li>
-            <li>Natural Language Processing</li>
-            <li>Deep Learning</li>
-          </ul>
-          <a class="gh pwa-element pwa-background-easeInFromLeft-easeOutToLeft" href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%203">View Project <span>&rarr;</span></a>
-        </div>
-        <div class="img-box">
-          <a href="https://github.com/naveenjohnsonv/AML/blob/main/Challenge%203/Group50_Challenge3.pdf">
-            <img class="work-img" src="./resources/images/4.webp" alt="Tweet Sentiment Analysis Project">
-          </a>
-        </div>
-      </div>
-    </div>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Naveen Johnson V - Portfolio</title>
+    <meta name="description" content="Data Science enthusiast pursuing Master's in Computer Science at EURECOM, France" />
     
-    <h2 id="about" class="subheading">About Me</h2>
-    <div class="about">
-      <p>I am a Data Science enthusiast pursuing a Master's in Computer Science at EURECOM, France. With over 2 years of experience in SAP Analytics, I have developed a strong foundation in data analysis, machine learning, and AI. I am proficient in data cleaning, visualization, modeling, and ETL processes. My goal is to leverage my skills in a challenging Data Science role to drive data-driven decision-making and innovation.</p>
-      <a href="http://cv.naveen.rocks" class="btn pwa-element pwa-background-easeInFromLeft-easeOutToLeft">My Resume</a>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Naveen Johnson V - Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Data-driven IT Engineer specializing in Data Science and Machine Learning" />
+    <meta property="og:image" content="resources/images/header.jpg"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+<body class="is-preload">
+    <!-- Background -->
+    <div id="bg"></div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Language Toggle -->
+        <div class="language-toggle">
+            <button id="lang-toggle" class="lang-btn" aria-label="Switch Language" title="Switch to French / Passer au français">
+                <span class="lang-current">EN</span>
+                <i class="fas fa-globe"></i>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <div class="logo">
+                <img src="resources/images/me.jpg" alt="Naveen Johnson Vallavanatt" class="logo-image" />
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h1>Naveen Johnson Vallavanatt</h1>
+                    <p data-i18n="header.tagline">Data Scientist | MSc in Data Science @ EURECOM<br />
+                    AI Planning • NLP • Knowledge Engineering<br />
+                    Research Intern @ <a href="https://www.alten.com" target="_blank">ALTEN Labs</a></p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#background" data-i18n="nav.background">Background</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- About -->
+            <article id="about">
+                <h2 class="major" data-i18n="about.title">About Me</h2>
+                <span class="image main"><img src="resources/images/me.jpg" alt="Profile" /></span>
+                <p data-i18n="about.intro1">Data Scientist with MSc in Data Science (EURECOM) and 2+ years enterprise analytics experience. Proficient in Python, PyTorch, TensorFlow, NLP, deep learning, and knowledge engineering. Recent research intern at ALTEN Labs focusing on AI Planning and NLP applications.</p>
+                <p data-i18n="about.intro2">I specialize in building LLM pipelines, automated knowledge graph construction, and deep learning models for computer vision and NLP tasks. Seeking Junior Data Scientist roles with openness to Data Engineer/Analyst positions.</p>
+                
+                <h3 data-i18n="about.skills.title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">R</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Machine Learning & AI</h4>
+                        <div class="tags">
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">HuggingFace</span>
+                            <span class="tag">LangChain</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Data Analysis</h4>
+                        <div class="tags">
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Seaborn</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>NLP & Deep Learning</h4>
+                        <div class="tags">
+                            <span class="tag">BERT</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">SpaCy</span>
+                            <span class="tag">NLTK</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Cloud & DevOps</h4>
+                        <div class="tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">GCP</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Specializations</h4>
+                        <div class="tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Knowledge Graphs</span>
+                            <span class="tag">ETL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 data-i18n="about.competencies.title">Key Competencies</h3>
+                <ul>
+                    <li>Data Cleaning & Preprocessing</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Statistical Modeling</li>
+                    <li>Feature Engineering</li>
+                    <li>Model Evaluation & Optimization</li>
+                    <li>Data Visualization</li>
+                    <li>ETL Process Design</li>
+                    <li>Business Intelligence</li>
+                </ul>
+
+                <button class="close" data-i18n="button.close">Close</button>
+            </article>
+
+            <!-- Background -->
+            <article id="background">
+                <h2 class="major" data-i18n="background.title">Professional Background</h2>
+                
+                <div class="actions" style="margin-bottom: 2rem;">
+                    <a href="resources/pdfs/resume.pdf" id="resume-download" class="button primary" target="_blank" data-i18n="background.resume.button" data-href-en="resources/pdfs/resume.pdf" data-href-fr="resources/pdfs/resume_fr.pdf">Download Full Resume</a>
+                </div>
+                
+                <!-- Background Navigation -->
+                <nav class="resume-nav">
+                    <ul>
+                        <li><a href="#resume-experience" class="resume-link" data-i18n="background.nav.experience">Experience</a></li>
+                        <li><a href="#resume-projects" class="resume-link" data-i18n="background.nav.projects">Projects</a></li>
+                        <li><a href="#resume-education" class="resume-link" data-i18n="background.nav.education">Education</a></li>
+                        <li><a href="#resume-certifications" class="resume-link" data-i18n="background.nav.certifications">Certifications</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Experience Section -->
+                <section id="resume-experience" class="resume-section">
+                    <h3 data-i18n="experience.title">Professional Experience</h3>
+                    
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 data-i18n="experience.alten.title">Data Science Research Intern - AI Planning / NLP</h4>
+                            <span class="experience-company" data-i18n="experience.alten.company">ALTEN Labs</span>
+                            <span class="experience-date" data-i18n="experience.alten.date">March 2025 - August 2025 | Valbonne, Alpes-Maritimes, France</span>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li data-i18n="experience.alten.desc1">Built a template-driven LLM pipeline to generate formal task specifications, then executed with an open-source planner</li>
+                                <li data-i18n="experience.alten.desc2">Added schema/consistency checks with automated fixes, cutting execution failures and improving reliability by ~60%</li>
+                                <li data-i18n="experience.alten.desc3">Implemented state hashing and content-addressed caching; built utilities for plan replay and auditability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 data-i18n="experience.blueprint1.title">Associate Consultant - SAP Analytics</h4>
+                            <span class="experience-company" data-i18n="experience.blueprint1.company">Blueprint Technologies Pvt Ltd</span>
+                            <span class="experience-date" data-i18n="experience.blueprint1.date">December 2021 - August 2023 | Bengaluru, Karnataka, India</span>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li data-i18n="experience.blueprint1.desc1">Delivered 20+ SAC dashboards with drill-downs and variance views for pharma and agrochem stakeholders</li>
+                                <li data-i18n="experience.blueprint1.desc2">Built ETL migrations between SAP ECC and BW/4HANA (ADSOs, CompositeProviders, transformations)</li>
+                                <li data-i18n="experience.blueprint1.desc3">Designed KPI logic and led data reconciliation, and UAT for production reports. Delivery across 5+ enterprise projects</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4 data-i18n="experience.blueprint2.title">Intern - SAP Analytics</h4>
+                            <span class="experience-company" data-i18n="experience.blueprint2.company">Blueprint Technologies Pvt Ltd</span>
+                            <span class="experience-date" data-i18n="experience.blueprint2.date">July 2021 - December 2021 | Bengaluru, Karnataka, India</span>
+                        </div>
+                        <div class="experience-content">
+                            <ul>
+                                <li data-i18n="experience.blueprint2.desc1">Completed 200+ hours across SAC, BW, HANA, Python, SQL; contributed prototypes and ETL/UAT documentation</li>
+                                <li data-i18n="experience.blueprint2.desc2">Automated data-quality checks using Python/Pandas and SQL extracts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="resume-projects" class="resume-section" style="display: none;">
+                    <h3 data-i18n="projects.title">Research Projects</h3>
+                    
+                    <div class="project-item">
+                        <h4 data-i18n="projects.llm.title">LLMs for Automated Generation of Interactive Scenarios</h4>
+                        <p class="project-meta" data-i18n="projects.llm.meta">AI Planning | NLP | PDDL | LLM</p>
+                        <p data-i18n="projects.llm.desc">Developed a neuro-symbolic pipeline combining LLMs with classical planners to generate playable interactive narrative scenarios. Implemented planner-validated pipeline with ~60% reliability improvement through automated schema/consistency checking and state caching for auditability.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">GPT-4o</span>
+                            <span class="tag">PDDL</span>
+                            <span class="tag">Fast Downward</span>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 data-i18n="projects.ke.title">Knowledge Engineering in the LLM Era</h4>
+                        <p class="project-meta" data-i18n="projects.ke.meta">Knowledge Graphs | NLP | RDF | Ontologies</p>
+                        <p data-i18n="projects.ke.desc">Reproduced and extended Text2KGBench experiments comparing SOTA LLM models for RDF triple extraction. Built ontology-aware LLM pipeline achieving superior performance with GPT-4o (AUC 0.89) over Qwen2.5 32B, integrated Odeuropa dataset with CIDOC-CRM-aligned ontologies.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">HuggingFace</span>
+                            <span class="tag">RDF</span>
+                        </div>
+                        <a href="https://github.com/naveenjohnsonv/Text2KGBench" class="button small" target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 data-i18n="projects.sentiment.title">Sentiment Analysis using BERT</h4>
+                        <p class="project-meta" data-i18n="projects.sentiment.meta">NLP | BERT | Transformers</p>
+                        <p data-i18n="projects.sentiment.desc">Implemented BERT-based model for tweet sentiment classification achieving 78% F1-score. Compared performance with traditional NLP approaches (TextBlob, VADER), demonstrating superior results with transformer models through comprehensive preprocessing pipeline.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">BERT</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">PyTorch</span>
+                        </div>
+                        <a href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%203" class="button small" target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 data-i18n="projects.audio.title">Audio Anomaly Detection in Industrial Machinery</h4>
+                        <p class="project-meta" data-i18n="projects.audio.meta">Deep Learning | Autoencoders | PyTorch</p>
+                        <p data-i18n="projects.audio.desc">Implemented Convolutional and Variational Autoencoders for detecting anomalies in industrial machine sounds. Achieved 88.8% AUC score with VAE outperforming classical AE (76.6%), enabling predictive maintenance applications for slide rail machinery.</p>
+                        <div class="tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">VAE</span>
+                            <span class="tag">Signal Processing</span>
+                        </div>
+                        <a href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%202" class="button small" target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 data-i18n="projects.cactus.title">Aerial Cactus Identification</h4>
+                        <p class="project-meta" data-i18n="projects.cactus.meta">Deep Learning | Computer Vision | CNN</p>
+                        <p data-i18n="projects.cactus.desc">Developed custom CNN architecture for columnar cactus identification from aerial imagery using stacked convolutional blocks with batch normalization and dropout. Achieved 99% accuracy and ROC/AUC score of 1.0 on VIGIA project dataset.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Keras</span>
+                        </div>
+                        <a href="https://github.com/naveenjohnsonv/AML/tree/main/Challenge%201" class="button small" target="_blank">View Project</a>
+                    </div>
+
+                    <div class="project-item">
+                        <h4 data-i18n="projects.solar.title">Solar Power Generation Forecasting</h4>
+                        <p class="project-meta" data-i18n="projects.solar.meta">Machine Learning | Time Series | Regression</p>
+                        <p data-i18n="projects.solar.desc">Comparative analysis of LASSO regression and k-Nearest Neighbors models for day-ahead DC power prediction from solar plant. LassoCV achieved RMSE of 0.538 using lagged DC power and ambient temperature features on hourly data.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Time Series</span>
+                        </div>
+                        <a href="https://github.com/naveenjohnsonv/ResearchProject" class="button small" target="_blank">View Project</a>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+                <section id="resume-education" class="resume-section" style="display: none;">
+                    <h3 data-i18n="education.title">Education</h3>
+                    
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4 data-i18n="education.eurecom.degree">Master of Science in Computer Science, Data Science Specialization</h4>
+                            <span class="education-school" data-i18n="education.eurecom.school">EURECOM, Biot, France</span>
+                            <span class="education-date" data-i18n="education.eurecom.date">2023 - 2025</span>
+                        </div>
+                        <div class="education-content">
+                            <p><strong data-i18n="education.eurecom.courses">Core Subjects:</strong></p>
+                            <ul>
+                                <li>Machine Learning and Intelligent Systems</li>
+                                <li>Distributed Systems and Cloud Computing</li>
+                                <li>Database Management System Implementation</li>
+                                <li>Deep Learning</li>
+                                <li>Advanced Statistical Inference</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4 data-i18n="education.iitm.degree">Diploma in Data Science</h4>
+                            <span class="education-school" data-i18n="education.iitm.school">Indian Institute of Technology, Madras, Chennai, India</span>
+                            <span class="education-date" data-i18n="education.iitm.date">2021 - 2024</span>
+                        </div>
+                        <div class="education-content">
+                            <p data-i18n="education.iitm.desc">Comprehensive program covering statistics, mathematics, data science fundamentals, Python programming, and SQL.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4 data-i18n="education.nit.degree">Bachelor of Technology in Electronics and Communication Engineering</h4>
+                            <span class="education-school" data-i18n="education.nit.school">National Institute of Technology, Calicut, Kozhikode, Kerala, India</span>
+                            <span class="education-date" data-i18n="education.nit.date">2016 - 2020</span>
+                        </div>
+                        <div class="education-content">
+                            <p data-i18n="education.nit.desc">Strong foundation in engineering fundamentals with focus on signal processing and communication systems.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications Section -->
+                <section id="resume-certifications" class="resume-section" style="display: none;">
+                    <h3 data-i18n="certifications.title">Certifications & Test Scores</h3>
+                    
+                    <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-accent);" data-i18n="certifications.scores.title">Test Scores</h4>
+                    <div class="certification-grid">
+                        <div class="certification-item">
+                            <h4>TFI (Test de français international)</h4>
+                            <p class="cert-issuer">French Language Test</p>
+                            <p class="cert-date">January 2025</p>
+                            <p><strong>Score: 385</strong></p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>TOEFL</h4>
+                            <p class="cert-issuer">English Language Proficiency Test</p>
+                            <p class="cert-date">November 2022</p>
+                            <p><strong>Score: 110</strong> - Demonstrates C2 level proficiency</p>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 2rem; margin-bottom: 1rem; color: var(--color-accent);" data-i18n="certifications.professional.title">Professional Certifications</h4>
+                    <div class="certification-grid">
+                        <div class="certification-item">
+                            <h4>Introduction to SAP Datasphere</h4>
+                            <p class="cert-issuer">SAP</p>
+                            <p class="cert-date">Issued: June 2023</p>
+                            <p><strong>Skills:</strong> Data Visualization, Data Modeling, SQL</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Foundational Level in Programming and Data Science</h4>
+                            <p class="cert-issuer">Indian Institute of Technology, Madras</p>
+                            <p class="cert-date">Issued: August 2022</p>
+                            <p><strong>Skills:</strong> Statistics, Mathematics, Data Science, Python, SQL</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Full-Stack Engineer Career Path</h4>
+                            <p class="cert-issuer">Codecademy</p>
+                            <p class="cert-date">Issued: March 2021</p>
+                            <p><strong>Skills:</strong> Git, Version Control</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Cybersecurity and the Internet of Things</h4>
+                            <p class="cert-issuer">Coursera</p>
+                            <p class="cert-date">Issued: December 2020</p>
+                            <p>Credential ID: NFTWGKHJQXEP</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Python Data Structures</h4>
+                            <p class="cert-issuer">Coursera</p>
+                            <p class="cert-date">Issued: December 2020</p>
+                            <p>Credential ID: 9WCQMTPJPJ4Q<br><strong>Skills:</strong> Python Programming</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Programming for Everybody (Getting Started with Python)</h4>
+                            <p class="cert-issuer">Coursera</p>
+                            <p class="cert-date">Issued: November 2020</p>
+                            <p>Credential ID: RF4AUX2KPXDF<br><strong>Skills:</strong> Python, Git</p>
+                        </div>
+
+                        <div class="certification-item">
+                            <h4>Elements of AI</h4>
+                            <p class="cert-issuer">University of Helsinki and Reaktor</p>
+                            <p class="cert-date">Issued: June 2018</p>
+                            <p>Credential ID: j1nbixsojic<br><strong>Skills:</strong> AI Fundamentals</p>
+                        </div>
+                    </div>
+                </section>
+
+                <button class="close" data-i18n="button.close">Close</button>
+            </article>
+
+            <!-- Contact -->
+            <article id="contact">
+                <h2 class="major" data-i18n="contact.title">Get In Touch</h2>
+                <p data-i18n="contact.intro">Are you looking for a data-driven professional to help solve complex problems or drive insights from your data? Or just want to say "Hi 👋"? Feel free to reach out!</p>
+                
+                <form method="POST" action="https://formspree.io/f/xdkpryal">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name" data-i18n="contact.name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="field half">
+                            <label for="email" data-i18n="contact.email">Email</label>
+                            <input type="email" name="_replyto" id="email" placeholder="your@email.com" required />
+                        </div>
+                        <div class="field">
+                            <label for="message" data-i18n="contact.message">Message</label>
+                            <textarea name="message" id="message" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" data-i18n="contact.send" value="Send Message" class="primary" /></li>
+                        <li><input type="reset" data-i18n="contact.reset" value="Reset" /></li>
+                    </ul>
+                </form>
+
+                <ul class="icons">
+                    <li><a href="https://github.com/naveenjohnsonv" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://linkedin.com/in/naveenjohnsonv" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#" class="email-link" data-user="naveenjohnsonv" data-domain="gmail.com" title="Email"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+                <button class="close" data-i18n="button.close">Close</button>
+            </article>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright">&copy; 2025 Naveen Johnson V | Made with ❤️ in France</p>
+        </footer>
     </div>
-    <h2 id="contact" class="subheading">Get in Touch</h2>
-    <div class="grid-box">
-      <p>Are you looking for a data-driven professional to help solve complex problems or drive insights from your data? Or just want to say "Hi 👋"? Feel free to reach out, and I'll get back to you as soon as possible.</p>
-      <a href="mailto:naveenjohnsonv@gmail.com" class="btn pwa-element pwa-background-easeInFromLeft-easeOutToLeft">Email</a>
-    </div>
-  </main>
-  <footer>
-    <p>&#169 2024 | Made with &#128156 in France</p>
-  </footer>
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./resources/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./resources/scripts/index.js"></script>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" title="Back to Top" style="display: none;">
+        <img src="resources/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    </button>
+
+    <!-- Scripts -->
+    <script src="resources/scripts/translations.js"></script>
+    <script src="resources/scripts/index.js"></script>
 </body>
 </html>
