@@ -22,10 +22,10 @@ async function convertHtmlToPdf(htmlPath, pdfPath) {
   await page.pdf({
     path: pdfPath,
     format: 'A4',
-    printBackground: true,
+    printBackground: false,
     margin: {
-      top: '0.4in',
-      right: '0.4in',
+      top: '0.41in',
+      right: '0.41in',
       bottom: '0.4in',
       left: '0.4in'
     }

@@ -348,7 +348,7 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buffer => {
-  const outputPath = path.join(__dirname, "../docx/Naveen_Johnson_Resume_FR.docx");
+  const outputPath = path.join(__dirname, "../../resources/docx/Naveen_Johnson_Resume_FR.docx");
   fs.writeFileSync(outputPath, buffer);
   console.log(`Final resume created successfully at: ${outputPath}`);
 });

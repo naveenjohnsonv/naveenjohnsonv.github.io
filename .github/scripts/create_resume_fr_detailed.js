@@ -27,12 +27,12 @@ const doc = new Document({
         levels: [{
           level: 0,
           format: LevelFormat.BULLET,
-          text: "•", // Standard bullet character (U+2022) - default Word bullet
+          text: "•",
           alignment: AlignmentType.LEFT,
           style: { 
             paragraph: { 
               indent: { 
-                left: convertInchesToTwip(0.125), // 0.125 inches = 180 twips
+                left: convertInchesToTwip(0.125),
                 hanging: convertInchesToTwip(0.125) 
               } 
             } 
@@ -65,22 +65,22 @@ const doc = new Document({
         alignment: AlignmentType.CENTER,
         spacing: { after: 180 },
         children: [
-          new TextRun({ text: "Nice, France • Email: ", size: 18 }),
+          new TextRun({ text: "Nice, France • E-mail : ", size: 18 }),
           new ExternalHyperlink({
             children: [new TextRun({ text: "naveenjohnsonv@gmail.com", size: 18 })],
             link: "mailto:naveenjohnsonv@gmail.com"
           }),
-          new TextRun({ text: " • Phone: ", size: 18 }),
+          new TextRun({ text: " • Tél : ", size: 18 }),
           new ExternalHyperlink({
             children: [new TextRun({ text: "+33 6 02 56 18 12", size: 18 })],
             link: "tel:+33602561812"
           }),
-          new TextRun({ text: " • LinkedIn: ", size: 18 }),
+          new TextRun({ text: " • LinkedIn : ", size: 18 }),
           new ExternalHyperlink({
             children: [new TextRun({ text: "in/naveenjv", size: 18 })],
             link: "https://www.linkedin.com/in/naveenjv"
           }),
-          new TextRun({ text: " • Portfolio: ", size: 18 }),
+          new TextRun({ text: " • Portfolio : ", size: 18 }),
           new ExternalHyperlink({
             children: [new TextRun({ text: "naveenjohnsonv.fr", size: 18 })],
             link: "https://naveenjohnsonv.fr"
@@ -88,27 +88,27 @@ const doc = new Document({
         ]
       }),
 
-      // KEY STRENGTHS
+      // PROFIL
       new Paragraph({
         style: "SectionHeader",
-        text: "KEY STRENGTHS"
+        children: [new TextRun({ text: "PROFIL" })]
       }),
       new Paragraph({
         spacing: { after: 120 },
         alignment: AlignmentType.JUSTIFIED,
-        text: "Data Scientist with MSc in Data Science (EURECOM) and 2+ years enterprise analytics experience. Proficient in Python, PyTorch, TensorFlow, NLP, deep learning, Generative AI, and knowledge engineering. Seeking Junior Data Scientist roles; open to Junior Data Engineer/Analyst positions."
+        text: "Data Scientist titulaire d'un Master en Data Science (EURECOM) avec 2+ ans d'expérience en tant qu'un Business Analyst. Maîtrise de Python, PyTorch, TensorFlow, NLP, deep learning, GenAI et science des données. Recherche poste Junior Data Scientist ; ouvert aux postes Data Engineer/Analyst."
       }),
 
-      // EXPERIENCE
+      // EXPÉRIENCE PROFESSIONNELLE
       new Paragraph({
         style: "SectionHeader",
-        text: "EXPERIENCE"
+        text: "EXPÉRIENCE PROFESSIONNELLE"
       }),
       
       // Experience 1 - Title
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Data Science Research Intern - AI Planning / NLP", bold: true })]
+        children: [new TextRun({ text: "Stagiaire Recherche Data Science - Planification IA / NLP", bold: true })]
       }),
       // Company and dates with tab stop at right margin
       new Paragraph({
@@ -119,28 +119,28 @@ const doc = new Document({
             children: [new TextRun({ text: "ALTEN Labs", bold: true })],
             link: "https://www.alten.fr/"
           }),
-          new TextRun({ children: [new Tab(), "March 2025 - August 2025, Valbonne, Alpes-Maritimes, France"], bold: true })
+          new TextRun({ children: [new Tab(), "Mars 2025 - Août 2025, Valbonne, Alpes-Maritimes, France"], bold: true })
         ]
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Built a template-driven LLM model pipeline, using OpenAI's GPT-4o, that generates formal PDDL task specifications, which are then executed with Fast Downward open-source planner to create playable interactive narratives"
+        text: "Développement d'un pipeline LLM utilisant OpenAI GPT-4o pour génération de spécifications de tâches formelles PDDL, exécutées avec le planificateur open-source Fast Downward pour créer des récits interactifs jouables"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
-        text: "Added schema/consistency checks with automated fixes, cutting execution failures and improving reliability by ~60%"
+        text: "Réduction de 60% des échecs d'exécution via contrôles de schéma/cohérence avec corrections automatisées"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Implemented state hashing and content-addressed caching; built utilities for plan replay and auditability"
+        text: "Implémentation de hachage d'état et mise en cache pour traçabilité et rejouabilité des plans"
       }),
 
       // Experience 2 - Title
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Associate Consultant - SAP Analytics", bold: true })]
+        children: [new TextRun({ text: "Consultant Associate - SAP Analytics", bold: true })]
       }),
       // Company and dates with tab stop at right margin
       new Paragraph({
@@ -151,28 +151,28 @@ const doc = new Document({
             children: [new TextRun({ text: "Blueprint Technologies Pvt Ltd", bold: true })],
             link: "https://bpterp.com"
           }),
-          new TextRun({ children: [new Tab(), "December 2021 - August 2023, Bengaluru, Karnataka, India"], bold: true })
+          new TextRun({ children: [new Tab(), "Décembre 2021 - Août 2023, Bengaluru, Karnataka, Inde"], bold: true })
         ]
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Delivered 20+ SAC dashboards with drill-downs and detailed statistical analyses for pharma and agrochem stakeholders"
+        text: "Livraison de 20+ tableaux de bord SAC avec analyses détaillées statistiques pour les parties prenantes pharma et agrochimie"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
-        text: "Built ETL migrations between SAP ECC and BW/4HANA (ADSOs, CompositeProviders, transformations)"
+        text: "Construction de migrations ETL entre SAP ECC et BW/4HANA (ADSOs, CompositeProviders, transformations)"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Designed KPI logic and led data reconciliation, and UAT for production reports; delivery across 5+ enterprise projects"
+        text: "Conception de logique KPI et pilotage de réconciliation de données et UAT sur 5+ projets d'entreprise"
       }),
 
       // Experience 3 - Title
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Intern - SAP Analytics", bold: true })]
+        children: [new TextRun({ text: "Stagiaire - SAP Analytics", bold: true })]
       }),
       // Company and dates with tab stop at right margin
       new Paragraph({
@@ -183,30 +183,30 @@ const doc = new Document({
             children: [new TextRun({ text: "Blueprint Technologies Pvt Ltd", bold: true })],
             link: "https://bpterp.com"
           }),
-          new TextRun({ children: [new Tab(), "July 2021 - December 2021, Bengaluru, Karnataka, India"], bold: true })
+          new TextRun({ children: [new Tab(), "Juillet 2021 - Décembre 2021, Bengaluru, Karnataka, Inde"], bold: true })
         ]
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Completed 200+ hours across SAC, BW, HANA, Python, SQL; contributed prototypes and ETL/UAT documentation"
+        text: "Réalisation de 200+ heures de formation sur SAC, BW, HANA, Python, SQL ; contribution aux prototypes et à la documentation ETL/UAT"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 120 },
-        text: "Automated data-quality checks using Python/Pandas and SQL extracts"
+        text: "Automatisation des contrôles de qualité des données en utilisant Python/Pandas et des extractions SQL"
       }),
 
-      // EDUCATION
+      // FORMATION
       new Paragraph({
         style: "SectionHeader",
-        text: "EDUCATION"
+        text: "FORMATION"
       }),
 
       // Education 1 - Degree
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Master of Science in Computer Science, Data Science Specialization", bold: true })]
+        children: [new TextRun({ text: "Diplôme Master en Informatique, mention Data Science", bold: true })]
       }),
       // Institution and dates with tab stop at right margin
       new Paragraph({
@@ -223,13 +223,13 @@ const doc = new Document({
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
         spacing: { after: 40 },
-        text: "• Core subjects: Machine Learning, Reinforcement Learning, Advanced Statistical Inference, Deep Learning, Distributed Systems and Cloud Computing, Database Management System Implementation (DBSys), Digital Image Processing & Video Compression, Semantic Web and Web Interaction Design, System and Network Security, Secure Communications, Project Management and Research Methodology"
+        text: "• Sujet principales : Machine Learning, Reinforcement Learning, Inférence Statistique Avancée, Deep Learning, Systèmes Distribués et Cloud Computing, Implémentation de Systèmes de Gestion de Base de Données (SGBD), Traitement d'Images Numériques & Compression Vidéo, Web Sémantique et Conception d'Interaction Web, Sécurité des Systèmes et des Réseaux, Communications Sécurisées, Gestion de Projet et Méthodologie de Recherche"
       }),
 
       // Education 2 - Degree
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Diploma in Data Science", bold: true })]
+        children: [new TextRun({ text: "Diplôme en Data Science", bold: true })]
       }),
       // Institution and dates with tab stop at right margin
       new Paragraph({
@@ -241,14 +241,14 @@ const doc = new Document({
             children: [new TextRun({ text: "Indian Institute of Technology, Madras" })],
             link: "https://study.iitm.ac.in/diploma"
           }),
-          new TextRun({ children: [" • Chennai, Tamil Nadu, India", new Tab(), "2021 - 2024"] })
+          new TextRun({ children: [" • Chennai, Tamil Nadu, Inde", new Tab(), "2021 - 2024"] })
         ]
       }),
 
       // Education 3 - Degree
       new Paragraph({
         alignment: AlignmentType.JUSTIFIED,
-        children: [new TextRun({ text: "Bachelor of Technology in Electronics and Communication Engineering", bold: true })]
+        children: [new TextRun({ text: "Diplôme d'Ingénieur (B.Tech) en Électronique et Télécommunications", bold: true })]
       }),
       // Institution and dates with tab stop at right margin
       new Paragraph({
@@ -260,14 +260,14 @@ const doc = new Document({
             children: [new TextRun({ text: "National Institute of Technology, Calicut" })],
             link: "https://nitc.ac.in/department/electronics-amp-communication-engineering/programmes/electronics-and-communication-engineering"
           }),
-          new TextRun({ children: [" • Kozhikode, Kerala, India", new Tab(), "2016 - 2020"] })
+          new TextRun({ children: [" • Kozhikode, Kerala, Inde", new Tab(), "2016 - 2020"] })
         ]
       }),
 
-      // PROJECTS
+      // PROJETS
       new Paragraph({
         style: "SectionHeader",
-        text: "PROJECTS"
+        text: "PROJETS"
       }),
 
       // Project 1
@@ -276,7 +276,7 @@ const doc = new Document({
         tabStops: [{ type: TabStopType.RIGHT, position: 10466 }],
         children: [
           new ExternalHyperlink({
-            children: [new TextRun({ text: "Knowledge Engineering in the LLM Era", bold: true })],
+            children: [new TextRun({ text: "Ingénierie des Connaissances à l'Ère des LLM", bold: true })],
             link: "https://github.com/naveenjohnsonv/Text2KGBench"
           }),
           new TextRun({ children: [new Tab(), "EURECOM • 2024"] })
@@ -285,16 +285,16 @@ const doc = new Document({
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Reproduced and extended Text2KGBench (Text-to-Knowledge-Graph Benchmark) experiments comparing state-of-the-art LLM models for RDF triple extraction, evaluating precision, recall, and F1-score"
+        text: "Reproduction et extension des expériences Text2KGBench (Text-to-Knowledge-Graph Benchmark) comparant les performances des modèles LLM de pointe pour l'extraction de triplets RDF, avec évaluation de la précision, du rappel et du F1-score"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
-        text: "Built ontology-aware LLM pipeline achieving superior performance with GPT-4o (AUC 0.89) over Qwen2.5 32B"
+        text: "Développement d'un pipeline LLM conscient des ontologies atteignant performance supérieure avec GPT-4o (AUC 0.89) par rapport à Qwen2.5 32B"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Integrated DBpedia‑WebNLG, Wikidata‑TekGen, Odeuropa datasets with CIDOC-CRM-aligned ontologies to evaluate semantic accuracy and hallucination reduction"
+        text: "Intégration du dataset DBpedia‑WebNLG, Wikidata‑TekGen, Odeuropa avec ontologies alignées CIDOC-CRM pour évaluation de la précision sémantique et réduction des hallucinations"
       }),
 
       // Project 2
@@ -303,7 +303,7 @@ const doc = new Document({
         tabStops: [{ type: TabStopType.RIGHT, position: 10466 }],
         children: [
           new ExternalHyperlink({
-            children: [new TextRun({ text: "Sentiment Analysis using BERT", bold: true })],
+            children: [new TextRun({ text: "Analyse de Sentiments avec BERT", bold: true })],
             link: "https://github.com/naveenjohnsonv/AML/tree/main/Challenge%203"
           }),
           new TextRun({ children: [new Tab(), "EURECOM • 2024"] })
@@ -312,12 +312,12 @@ const doc = new Document({
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Implemented a BERT-based model for tweet sentiment classification achieving 78% F1-score"
+        text: "Implémentation d'un modèle basé sur BERT pour classification de sentiments de tweets atteignant 78% de F1-Score"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Compared performance with traditional NLP approaches (TextBlob, VADER), demonstrating superior results with transformer models through comprehensive preprocessing pipeline"
+        text: "Comparaison de performance avec approches NLP traditionnelles (TextBlob, VADER), démontrant résultats supérieurs avec modèles transformers via pipeline de prétraitement complet"
       }),
 
       // Project 3
@@ -326,7 +326,7 @@ const doc = new Document({
         tabStops: [{ type: TabStopType.RIGHT, position: 10466 }],
         children: [
           new ExternalHyperlink({
-            children: [new TextRun({ text: "Audio Anomaly Detection in Industrial Machinery", bold: true })],
+            children: [new TextRun({ text: "Détection d'Anomalies Audio dans les Machines Industrielles", bold: true })],
             link: "https://github.com/naveenjohnsonv/AML/tree/main/Challenge%202"
           }),
           new TextRun({ children: [new Tab(), "EURECOM • 2024"] })
@@ -335,12 +335,12 @@ const doc = new Document({
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Implemented Convolutional and Variational Autoencoders for detecting anomalies in industrial machine sounds"
+        text: "Implémentation d'autoencodeurs convolutionnels et variationnels pour détecter anomalies dans sons de machines industrielles"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Achieved 88.8% AUC score with VAE outperforming classical AE (76.6%), enabling predictive maintenance applications for slide rail machinery"
+        text: "Obtention d'un score AUC de 88,8% avec VAE surpassant AE classique (76,6%), permettant applications de maintenance prédictive pour machines à rails coulissants"
       }),
 
       // Project 4
@@ -349,7 +349,7 @@ const doc = new Document({
         tabStops: [{ type: TabStopType.RIGHT, position: 10466 }],
         children: [
           new ExternalHyperlink({
-            children: [new TextRun({ text: "Aerial Cactus Identification", bold: true })],
+            children: [new TextRun({ text: "Identification de Cactus par Imagerie Aérienne", bold: true })],
             link: "https://github.com/naveenjohnsonv/AML/tree/main/Challenge%201"
           }),
           new TextRun({ children: [new Tab(), "EURECOM • 2024"] })
@@ -358,12 +358,12 @@ const doc = new Document({
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Developed custom CNN architecture for columnar cactus identification from aerial imagery using stacked convolutional blocks with batch normalization and dropout"
+        text: "Développement d'une architecture CNN personnalisée pour identification de cactus columnaires à partir d'imagerie aérienne utilisant blocs convolutionnels empilés avec normalisation par batch et dropout"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 40 },
-        text: "Achieved 99% accuracy and ROC/AUC score of 1.0 on VIGIA project dataset"
+        text: "Obtention d'une précision de 99% et score ROC/AUC de 1,0 sur dataset du projet VIGIA"
       }),
 
       // Project 5
@@ -372,7 +372,7 @@ const doc = new Document({
         tabStops: [{ type: TabStopType.RIGHT, position: 10466 }],
         children: [
           new ExternalHyperlink({
-            children: [new TextRun({ text: "Solar Power Generation Forecasting", bold: true })],
+            children: [new TextRun({ text: "Prévision de Production d'Énergie Solaire", bold: true })],
             link: "https://github.com/naveenjohnsonv/ResearchProject"
           }),
           new TextRun({ children: [new Tab(), "EURECOM • 2024"] })
@@ -381,25 +381,25 @@ const doc = new Document({
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { before: 0 },
-        text: "Comparative analysis of LASSO regression and k-Nearest Neighbors models for day-ahead DC power prediction from solar plant"
+        text: "Analyse comparative de modèles de régression LASSO et k plus proches voisins pour prédiction jour suivant de puissance DC d'installation solaire"
       }),
       new Paragraph({
         numbering: { reference: "bullet-list", level: 0 },
         spacing: { after: 120 },
-        text: "LassoCV achieved RMSE of 0.538 using lagged DC power and ambient temperature features on hourly data"
+        text: "LassoCV a atteint RMSE de 0,538 utilisant puissance DC retardée et caractéristiques de température ambiante sur données horaires"
       }),
 
-      // SKILLS
+      // COMPÉTENCES
       new Paragraph({
         style: "SectionHeader",
-        text: "SKILLS"
+        children: [new TextRun({ text: "COMPÉTENCES" })]
       }),
 
       new Paragraph({
         alignment: AlignmentType.LEFT,
         spacing: { after: 40 },
         children: [
-          new TextRun({ text: "Programming/ML: ", bold: true }),
+          new TextRun({ text: "Programmation/ML: ", bold: true }),
           new TextRun("Python, SQL, R, scikit-learn, PyTorch, TensorFlow, XGBoost, PySpark, Pandas, NumPy")
         ]
       }),
@@ -409,7 +409,7 @@ const doc = new Document({
         spacing: { after: 40 },
         children: [
           new TextRun({ text: "Deep Learning/NLP/GenAI: ", bold: true }),
-          new TextRun("CNN, RNN, autoencoders, transformers, BERT, GPT-4o, HuggingFace, LangChain, prompt engineering, hallucination detection, RAG")
+          new TextRun("CNN, RNN, Autoencodeurs, Transformers, BERT, GPT-4o, HuggingFace, LangChain, Prompt Engineering, Détection Hallucinations, RAG")
         ]
       }),
 
@@ -417,8 +417,8 @@ const doc = new Document({
         alignment: AlignmentType.LEFT,
         spacing: { after: 40 },
         children: [
-          new TextRun({ text: "ML Techniques: ", bold: true }),
-          new TextRun("Time series (ARIMAX, LASSO), computer vision, RL, optimization, feature engineering")
+          new TextRun({ text: "Techniques ML: ", bold: true }),
+          new TextRun("Séries temporelles (ARIMAX, LASSO), computer vision, RL, optimisation, feature engineering")
         ]
       }),
 
@@ -436,15 +436,15 @@ const doc = new Document({
         spacing: { after: 40 },
         children: [
           new TextRun({ text: "DevOps/BI: ", bold: true }),
-          new TextRun("Docker, Git, CI/CD, SAP SAC, dashboards, KPI design, SCRUM, Agile")
+          new TextRun("Docker, Git, CI/CD, SAP SAC, dashboards, conception KPI, SCRUM, Agile")
         ]
       }),
 
       new Paragraph({
         alignment: AlignmentType.LEFT,
         children: [
-          new TextRun({ text: "Languages: ", bold: true }),
-          new TextRun("English - Proficient (C2), French - Intermediate (B1)")
+          new TextRun({ text: "Langues : ", bold: true }),
+          new TextRun("Anglais - Courant (C2), Français - Intermédiaire (B1)")
         ]
       })
     ]
@@ -452,7 +452,8 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buffer => {
-  const outputPath = path.join(__dirname, "../docx/Naveen_Johnson_Resume_EN_Detailed.docx");
+  const outputPath = path.join(__dirname, "../../resources/docx/Naveen_Johnson_Resume_FR_Detailed.docx");
   fs.writeFileSync(outputPath, buffer);
   console.log(`Final resume created successfully at: ${outputPath}`);
 });
+

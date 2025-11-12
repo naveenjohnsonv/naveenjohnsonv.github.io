@@ -4,10 +4,10 @@ on:
   push:
     branches: ["main"]
     paths:
-      - 'resources/scripts/create_resume_en_detailed.js'
-      - 'resources/scripts/create_resume_fr_detailed.js'
-      - 'resources/scripts/create_resume_fr.js'
-      - 'resources/scripts/create_resume_en.js'
+      - '.github/scripts/create_resume_en_detailed.js'
+      - '.github/scripts/create_resume_fr_detailed.js'
+      - '.github/scripts/create_resume_fr.js'
+      - '.github/scripts/create_resume_en.js'
   workflow_dispatch:
 
 permissions:
@@ -31,10 +31,10 @@ jobs:
         
       - name: Generate all resume DOCX files
         run: |
-          node resources/scripts/create_resume_en_detailed.js
-          node resources/scripts/create_resume_fr_detailed.js
-          node resources/scripts/create_resume_fr.js
-          node resources/scripts/create_resume_en.js
+          node .github/scripts/create_resume_en_detailed.js
+          node .github/scripts/create_resume_fr_detailed.js
+          node .github/scripts/create_resume_fr.js
+          node .github/scripts/create_resume_en.js
         
       - name: Commit generated DOCX files
         run: |
