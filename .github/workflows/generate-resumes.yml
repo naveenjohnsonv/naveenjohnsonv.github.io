@@ -42,5 +42,6 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add resources/docx/*.docx
           git diff --staged --quiet || git commit -m "Update generated resume DOCX files [skip ci]"
+          git pull --rebase origin main
           git push
 
