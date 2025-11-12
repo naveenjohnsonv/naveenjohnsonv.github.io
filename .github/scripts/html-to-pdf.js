@@ -24,10 +24,10 @@ async function convertHtmlToPdf(htmlPath, pdfPath) {
     format: 'A4',
     printBackground: true,
     margin: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0
+      top: '0.4in',
+      right: '0.4in',
+      bottom: '0.4in',
+      left: '0.4in'
     }
   });
   
