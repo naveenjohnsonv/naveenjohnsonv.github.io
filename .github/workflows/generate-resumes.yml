@@ -34,7 +34,7 @@ jobs:
           node resources/scripts/create_resume_en_detailed.js
           node resources/scripts/create_resume_fr_detailed.js
           node resources/scripts/create_resume_fr.js
-          node resources/scripts/create_resume)en.js
+          node resources/scripts/create_resume_en.js
         
       - name: Commit generated DOCX files
         run: |
