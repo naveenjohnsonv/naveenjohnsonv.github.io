@@ -1,0 +1,40 @@
+name: Generate Resume PDFs
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'resources/html/resume_en.html'
+      - 'resources/html/resume_fr.html'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-pdfs:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install Puppeteer
+        run: npm install puppeteer
+        
+      - name: Generate PDFs from HTML
+        run: node .github/scripts/html-to-pdf.js
+        
+      - name: Commit generated PDF files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add resources/pdfs/*.pdf
+          git diff --staged --quiet || git commit -m "Update generated resume PDFs [skip ci]"
+          git push
+
