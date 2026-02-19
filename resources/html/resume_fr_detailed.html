@@ -96,7 +96,7 @@
   <p class="s9"></p>
   <p class="d i">PROFIL</p>
   <p class="s4"></p>
-  <p class="a g">Data Scientist titulaire d'un Master en Data Science (EURECOM) avec 2+ ans d'expérience en tant qu'un Business Analyst. Maîtrise de Python, PyTorch, TensorFlow, NLP, deep learning, GenAI et science des données. Recherche poste Junior Data Scientist ; ouvert aux postes Data Engineer/Analyst.</p>
+  <p class="a g">Data Scientist (MSc, EURECOM) avec 2+ ans d'expérience dans la construction de solutions analytiques pour des entreprises mondiales (pharma, agrochimie, énergie). Expérience en pipelines LLM optimisés pour latence et fiabilité. Expertise en Python, PyTorch et IA générative. Apprentissage rapide, documentation rigoureuse et autonomie, du prototype à la production.</p>
   <p class="s6"></p>
   <p class="d i">EXPÉRIENCE PROFESSIONNELLE</p>
   <p class="s4"></p>
@@ -106,9 +106,9 @@
     <span class="h r">Mars 2025 - Août 2025, Valbonne, Alpes-Maritimes, France</span>
   </p>
   <ul class="m start">
-    <li class="g">Développement d'un pipeline LLM utilisant OpenAI GPT-4o pour génération de spécifications de tâches formelles PDDL, exécutées avec le planificateur open-source Fast Downward pour créer des récits interactifs jouables</li>
-    <li class="g">Réduction de 60% des échecs d'exécution via contrôles de schéma/cohérence avec corrections automatisées</li>
-    <li class="g">Implémentation de hachage d'état et mise en cache pour traçabilité et rejouabilité des plans</li>
+    <li class="g">Développement d'un pipeline LLM (GPT-4o) convertissant des récits en langage naturel en langage de description de domaine de planification (PDDL), exécuté avec le planificateur Fast Downward pour produire des récits jouables</li>
+    <li class="g">L'ajout de la mise en cache et du hachage d'état avec boucles d'auto-correction a réduit les échecs d'exécution de 60 %</li>
+    <li class="g">Mise en cache adressée par contenu (hachage d'état) pour reproductibilité et rejeu complets de chaque plan généré</li>
   </ul>
   <p class="s2"></p>
   <p class="a h">Consultant Associate - SAP Analytics</p>
@@ -117,9 +117,9 @@
     <span class="h r">Décembre 2021 - Août 2023, Bengaluru, Karnataka, Inde</span>
   </p>
   <ul class="m">
-    <li class="g">Livraison de 20+ tableaux de bord SAC avec analyses détaillées statistiques pour les parties prenantes pharma et agrochimie</li>
-    <li class="g">Construction de migrations ETL entre SAP ECC et BW/4HANA (ADSOs, CompositeProviders, transformations)</li>
-    <li class="g">Conception de logique KPI et pilotage de réconciliation de données et UAT sur 5+ projets d'entreprise</li>
+    <li class="g">Livraison de 20+ tableaux de bord avec drill-downs et logique KPI complexe pour clients pharma, agrochimie et énergie</li>
+    <li class="g">Migrations ETL entre SAP ECC et BW/4HANA (ADSOs, CompositeProviders, transformations) ; formules KPI avec contournements créatifs des limites de plateforme</li>
+    <li class="g">Pilotage réconciliation des données et tests d'acceptation utilisateur (UAT) pour rapports de production ; revues hebdomadaires client sur 5+ projets entreprise</li>
   </ul>
   <p class="s2"></p>
   <p class="a h">Stagiaire - SAP Analytics</p>
@@ -128,8 +128,8 @@
     <span class="h r">Juillet 2021 - Décembre 2021, Bengaluru, Karnataka, Inde</span>
   </p>
   <ul class="m start">
-    <li class="g">Réalisation de 200+ heures de formation sur SAC, BW, HANA, Python, SQL ; contribution aux prototypes et à la documentation ETL/UAT</li>
-    <li class="g">Automatisation des contrôles de qualité des données en utilisant Python/Pandas et des extractions SQL</li>
+    <li class="g">Réalisation de 200+ heures sur SAC, BW, HANA, Python, SQL ; contribution aux prototypes et à la documentation ETL/UAT</li>
+    <li class="g">Automatisation des contrôles de qualité des données avec Python/Pandas et extractions SQL</li>
   </ul>
   <p class="s6"></p>
   <p class="d i">FORMATION</p>
@@ -159,13 +159,22 @@
   <p class="d i">PROJETS</p>
   <p class="s4"></p>
   <p class="a">
-    <span class="h"><a class="n" href="https://github.com/naveenjohnsonv/Text2KGBench">Ingénierie des Connaissances à l'Ère des LLM</a></span>
+    <span class="h"><a class="n" href="https://github.com/naveenjohnsonv/Text2KGBench">Ingénierie des Connaissances et Réduction des Hallucinations</a></span>
     <span class="g r">EURECOM &bull; 2024</span>
   </p>
   <ul class="m start">
-    <li class="g">Reproduction et extension des expériences Text2KGBench (Text-to-Knowledge-Graph Benchmark) comparant les performances des modèles LLM de pointe pour l'extraction de triplets RDF, avec évaluation de la précision, du rappel et du F1-score</li>
-    <li class="g">Développement d'un pipeline LLM conscient des ontologies atteignant performance supérieure avec GPT-4o (AUC 0.89) par rapport à Qwen2.5 32B</li>
-    <li class="g">Intégration du dataset DBpedia‑WebNLG, Wikidata‑TekGen, Odeuropa avec ontologies alignées CIDOC-CRM pour évaluation de la précision sémantique et réduction des hallucinations</li>
+    <li class="g">Reproduction et extension du framework Text2KGBench ; correction des problèmes du code ; intégration du dataset historique-sensoriel Odeuropa ; benchmark GPT-4o vs Qwen2.5 32B sur extraction de graphes de connaissances à partir de 16K+ phrases alignées (DBpedia, Wikidata, Odeuropa)</li>
+    <li class="g">GPT-4o : AUC 0.89, conformité ontologique 0.99, taux d'hallucination les plus bas (SH 0.01, RH 0.01), surpassant Qwen2.5 32B et baselines antérieures (Vicuna, Alpaca-LoRA)</li>
+  </ul>
+  <p class="s2"></p>
+  <p class="a">
+    <span class="h"><a class="n" href="https://github.com/naveenjohnsonv/IIT-Madras-BDM-Capstone-Project">Optimisation des Achats et Maximisation des Profits pour un Revendeur de Peinture</a></span>
+    <span class="g r">IIT Madras &bull; 2022</span>
+  </p>
+  <ul class="m">
+    <li class="g">Analyse de &#8377;23M+ ventes, &#8377;9M stocks et données comptables pour Key Colors, revendeur peinture décorative au Kerala (B2B/B2C), sur 3 mois ; extraction et nettoyage des données stock depuis logiciel legacy</li>
+    <li class="g">Identifié répartition Pareto (20 % clients &#8594; 80 % revenus), concentration géographique (48 % des ventes en site principal), &#8377;900K stock mort concentré en émulsions, pics saisonniers décembre/mars</li>
+    <li class="g">Recommandations adoptées : approvisionnement aligné demande, programmes CRM fidélité, tarification ciblée pour articles à rotation lente, renégociation fournisseurs sur données stock mort, carnet de mélanges couleurs pour réduire pertes sur teintes personnalisées</li>
   </ul>
   <p class="s2"></p>
   <p class="a">
@@ -173,8 +182,7 @@
     <span class="g r">EURECOM &bull; 2024</span>
   </p>
   <ul class="m">
-    <li class="g">Implémentation d'un modèle basé sur BERT pour classification de sentiments de tweets atteignant 78% de F1-Score</li>
-    <li class="g">Comparaison de performance avec approches NLP traditionnelles (TextBlob, VADER), démontrant résultats supérieurs avec modèles transformers via pipeline de prétraitement complet</li>
+    <li class="g">Fine-tuning BERT sur 10K+ tweets pour classification sentiment 3 classes (prétraitement, équilibrage des classes) ; 78% macro F1 vs VADER 64% et TextBlob 60%</li>
   </ul>
   <p class="s2"></p>
   <p class="a">
@@ -182,8 +190,8 @@
     <span class="g r">EURECOM &bull; 2024</span>
   </p>
   <ul class="m">
-    <li class="g">Implémentation d'autoencodeurs convolutionnels et variationnels pour détecter anomalies dans sons de machines industrielles</li>
-    <li class="g">Obtention d'un score AUC de 88,8% avec VAE surpassant AE classique (76,6%), permettant applications de maintenance prédictive pour machines à rails coulissants</li>
+    <li class="g">Implémentation d'autoencodeurs convolutionnels et variationnels pour détection d'anomalies dans les sons de machines industrielles (dataset MIMII slide-rail)</li>
+    <li class="g">VAE : AUC 88,8% vs AE classique 76,6% ; applications maintenance prédictive pour machines à rails coulissants</li>
   </ul>
   <p class="s2"></p>
   <p class="a">
@@ -191,8 +199,8 @@
     <span class="g r">EURECOM &bull; 2024</span>
   </p>
   <ul class="m">
-    <li class="g">Développement d'une architecture CNN personnalisée pour identification de cactus columnaires à partir d'imagerie aérienne utilisant blocs convolutionnels empilés avec normalisation par batch et dropout</li>
-    <li class="g">Obtention d'une précision de 99% et score ROC/AUC de 1,0 sur dataset du projet VIGIA</li>
+    <li class="g">Architecture CNN personnalisée pour identification de cactus columnaires à partir d'imagerie aérienne (blocs convolutionnels, batch norm, dropout)</li>
+    <li class="g">99% de précision et ROC/AUC 1,0 sur dataset projet VIGIA</li>
   </ul>
   <p class="s2"></p>
   <p class="a">
@@ -200,20 +208,20 @@
     <span class="g r">EURECOM &bull; 2024</span>
   </p>
   <ul class="m">
-    <li class="g">Analyse comparative de modèles de régression LASSO et k plus proches voisins pour prédiction jour suivant de puissance DC d'installation solaire</li>
-    <li class="g">LassoCV a atteint RMSE de 0,538 utilisant puissance DC retardée et caractéristiques de température ambiante sur données horaires</li>
+    <li class="g">Analyse comparative LASSO et k-NN pour prédiction jour suivant de puissance DC d'installation solaire</li>
+    <li class="g">LassoCV : RMSE 0,538 avec puissance DC retardée et température ambiante sur données horaires</li>
   </ul>
   <p class="s6"></p>
   <p class="d i">COMPÉTENCES</p>
   <p class="s4"></p>
   <p class="c">
-    <span class="h">Programmation/ML: </span>
-    <span class="g">Python, SQL, R, scikit-learn, PyTorch, TensorFlow, XGBoost, PySpark, Pandas, NumPy</span>
+    <span class="h">Programmation/ML : </span>
+    <span class="g">Python, SQL, R, scikit-learn, PyTorch, XGBoost, PySpark, Pandas, NumPy</span>
   </p>
   <p class="s2"></p>
   <p class="c">
-    <span class="h">Deep Learning/NLP/GenAI: </span>
-    <span class="g">CNN, RNN, Autoencodeurs, Transformers, BERT, GPT-4o, HuggingFace, LangChain, Prompt Engineering, Détection Hallucinations, RAG</span>
+    <span class="h">Deep Learning/NLP/GenAI : </span>
+    <span class="g">CNN, RNN, Autoencodeurs, Transformers, BERT, GPT-4o, HuggingFace, LangChain, Prompt Engineering, Détection Hallucinations, RAG, Graphes de connaissances</span>
   </p>
   <p class="s2"></p>
   <p class="c">
